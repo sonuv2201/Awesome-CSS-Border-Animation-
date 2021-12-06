@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>HTML, CSS and JavaScript demo</title>
+<style>
+body{
+  background: #161635;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h2{
+  background: #070c1b;
+  color: #fff;
+  width: 150px;
+  height: 150px;
+  text-align: center;
+  line-height: 150px;
+  font-size: 55px;
+  position: relative;
+  border-radius: 10px; 
+  overflow: hidden;
+}
+h2 span{ position: relative; z-index:5;}
+h2:before{
+  content: "";
+  width: 50px;
+  height: 250px;
+  background: linear-gradient(to bottom, blue, orange);
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  animation:  amin 10s infinite linear;
+}
+
+h2:after{
+  content: "";
+ background: #070c1b;
+  position: absolute;
+  left: 0;
+  inset: 4px;
+   border-radius: 5px; 
+}
+
+@keyframes amin{
+  0%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+}
+body{
+    height: 97vh;
+	font-family:sans-serif;
+}
+</style>
+</head>
+<body>
+<!-- Start your code here -->
+
+  <h2><span>CSS</span></h2>
+<!-- End your code here -->
+</body>
+</html>
